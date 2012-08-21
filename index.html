@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fragment Demo</title>
+    <script type="text/javascript" src="jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="fragment.js"></script>
+    <script type="text/javascript" src="sample.js"></script>
+  </head>
+  <body>
+    <section id="f1"></section>
+    <section id="f2"></section>
+  </body>
+  <script type="text/javascript">
+    var fm1 = new FragmentManager('#f1');
+    fm1.replace(new TitleFragment());
+    var fm2 = new FragmentManager('#f2');
+    fm2.replace(new TitleFragment());
+  </script>
+</html>
+    
